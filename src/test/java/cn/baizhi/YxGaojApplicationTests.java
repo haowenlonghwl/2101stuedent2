@@ -22,6 +22,7 @@ class YxApplicationTests {
 
     @Test
     void contextLoads(){
+        System.out.println();
         List<Video> videos = vd.queryByPage(0, 1);
         for (Video video : videos) {
             System.out.println(video);
