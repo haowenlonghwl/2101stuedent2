@@ -24,6 +24,10 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao ud;
 
+
+    //做缓存
+    public Map<String,Object> queryByPage(){return null;}
+
     @Transactional(propagation = Propagation.SUPPORTS)
     @Override
     public Map<String, Object> queryByPage(int page, int size) {////第二页2 的3条数据
